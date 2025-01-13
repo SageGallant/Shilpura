@@ -1,5 +1,8 @@
 import { MetadataRoute } from "next";
 
+// This forces the route to be treated as static during static export
+export const dynamic = "force-static";
+
 export default function manifest(): MetadataRoute.Manifest {
   return {
     name: "Shilpura - Premium Handicrafts",

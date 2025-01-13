@@ -1,5 +1,8 @@
 import { MetadataRoute } from "next";
 
+// This forces the route to be treated as static during static export
+export const dynamic = "force-static";
+
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://shilpura.com";
 
